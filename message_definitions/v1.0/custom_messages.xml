@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<mavlink>
+    <version>9</version>
+    <dialect>3</dialect>
+    <messages>
+         <message id="68" name="PROBE_DATA">
+          <description> The sensor data logged from the PR01 Sensor</description>
+          <field type="uint64_t" name="timestamp"> Timestamp of reading </field>
+          <field type="uint16_t" name="status"> The current status of the sensor</field>
+          <field type="float" name="thickness" units="mm">The thickness of the wall</field>
+          <field type="uint32_t" name="contact">Contact</field>
+        </message>
+    </messages>
+</mavlink>
